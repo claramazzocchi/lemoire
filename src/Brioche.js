@@ -72,7 +72,7 @@ function Brioche() {
   
     return (
     <div style={{ padding: "2rem" }}>
-      <h2>Prenota fino a 15 brioche 🥐</h2>
+      <h2>Prenota fino a 15 brioche: </h2>
       <form onSubmit={inviaPrenotazione}>
         <div>
           <label>Nome:</label><br />

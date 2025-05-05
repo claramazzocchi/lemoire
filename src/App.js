@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <h1>Le Moire Cafè Piacenza</h1>
-      <Brioche />
+      <Brioche/>
       <hr />
       <Prenotatavolo />
       <ListaPrenotazioniTavoli/>
