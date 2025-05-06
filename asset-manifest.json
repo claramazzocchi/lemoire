@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/lemoire/static/css/main.e6c13ad2.css",
-    "main.js": "/lemoire/static/js/main.0db15b4b.js",
+    "main.js": "/lemoire/static/js/main.2aedb70c.js",
     "static/js/453.8ab44547.chunk.js": "/lemoire/static/js/453.8ab44547.chunk.js",
     "index.html": "/lemoire/index.html",
     "main.e6c13ad2.css.map": "/lemoire/static/css/main.e6c13ad2.css.map",
-    "main.0db15b4b.js.map": "/lemoire/static/js/main.0db15b4b.js.map",
+    "main.2aedb70c.js.map": "/lemoire/static/js/main.2aedb70c.js.map",
     "453.8ab44547.chunk.js.map": "/lemoire/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.0db15b4b.js"
+    "static/js/main.2aedb70c.js"
   ]
 }
