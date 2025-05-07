@@ -33,6 +33,9 @@ function PrenotaTavolo() {
         },
         body: JSON.stringify(prenotazione),
       });
+      
+      console.log(await res.json()); // Stampa la risposta per diagnosticare l'errore
+      
 
       const data = await res.json();
       setConferma(data.messaggio);

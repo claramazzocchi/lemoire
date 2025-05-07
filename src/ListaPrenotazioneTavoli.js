@@ -5,7 +5,7 @@ function ListaPrenotazioniTavoli() {
   const [prenotazioniBrioche, setPrenotazioniBrioche] = useState([]);
   const [accessoConsentito, setAccessoConsentito] = useState(false);
   const [password, setPassword] = useState("");
-
+  
   const PASSWORD_GESTORE = "Fralli2025$";
 
   const caricaPrenotazioni = async () => {
