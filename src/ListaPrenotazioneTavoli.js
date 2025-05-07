@@ -13,7 +13,8 @@ function ListaPrenotazioniTavoli() {
     const data = await res.json();
     setPrenotazioni(data);
 
-    const resBrioche = await fetch("https://backend-lemoire.onrender.com/prenotazioni-brioche");    const dataBrioche = await resBrioche.json();
+    const resBrioche = await fetch("https://backend-lemoire.onrender.com/prenotazioni-brioche");    
+    const dataBrioche = await resBrioche.json();
     setPrenotazioniBrioche(dataBrioche);
   };
 

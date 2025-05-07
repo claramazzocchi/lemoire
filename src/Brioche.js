@@ -46,7 +46,7 @@ function Brioche() {
       numeroditelefono,
       data,
       orario,
-      brioche: gusti.filter(g => g) // rimuove vuoti
+      brioche: gusti.filter(g => g)
     };
 
     try {
