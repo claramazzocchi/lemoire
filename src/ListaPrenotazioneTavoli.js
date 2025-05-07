@@ -9,9 +9,9 @@ function ListaPrenotazioniTavoli() {
   const PASSWORD_GESTORE = "Fralli2025$";
 
   const caricaPrenotazioni = async () => {
-    const resPrenotatavolo = await fetch("https://backend-lemoire.onrender.com/prenotazioni-tavoli");
-    const dataPrenotatavolo = await res.json();
-    setPrenotazioni(dataPrenotatavolo);
+    const res = await fetch("https://backend-lemoire.onrender.com/prenotazioni-tavoli");
+    const data = await res.json();
+    setPrenotazioni(data);
 
     const resBrioche = await fetch("https://backend-lemoire.onrender.com/prenotazioni-brioche");    
     const dataBrioche = await resBrioche.json();
