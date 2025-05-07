@@ -9,12 +9,11 @@ function ListaPrenotazioniTavoli() {
   const PASSWORD_GESTORE = "Fralli2025$";
 
   const caricaPrenotazioni = async () => {
-    const res = await fetch("http://localhost:5000/prenotazioni-tavoli");
+    const res = await fetch("https://backend-lemoire.onrender.com/prenotazioni-tavoli");
     const data = await res.json();
     setPrenotazioni(data);
 
-    const resBrioche = await fetch("http://localhost:5000/prenotazioni-brioche");
-    const dataBrioche = await resBrioche.json();
+    const resBrioche = await fetch("https://backend-lemoire.onrender.com/prenotazioni-brioche");    const dataBrioche = await resBrioche.json();
     setPrenotazioniBrioche(dataBrioche);
   };
 
@@ -34,7 +33,7 @@ function ListaPrenotazioniTavoli() {
   };
 
   const aggiornaConferma = async (id, confermata) => {
-    await fetch(`http://localhost:5000/prenotazioni-tavoli/${id}`, {
+    await fetch(`https://backend-lemoire.onrender.com/prenotazioni-tavoli/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
@@ -78,9 +77,9 @@ function ListaPrenotazioniTavoli() {
                 <>
                   <button onClick={() => aggiornaConferma(p._id, true)}>Conferma</button>
                   <button onClick={() => aggiornaConferma(p._id, false)} style={{ marginLeft: "0.5rem" }}>Rifiuta</button>
-                  </>
-            )}
-          </li>
+                </>
+              )}
+              </li>
         ))}
       </ul>
     )}

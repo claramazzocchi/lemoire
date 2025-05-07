@@ -26,12 +26,12 @@ function PrenotaTavolo() {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/prenota-tavolo", {
+      const res = await fetch("https://backend-lemoire.onrender.com/prenota-tavoli", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(prenotazione)
+        body: JSON.stringify(prenotazione),
       });
 
       const data = await res.json();
