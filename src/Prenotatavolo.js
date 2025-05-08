@@ -33,9 +33,9 @@ function PrenotaTavolo() {
         },
         body: JSON.stringify(prenotazione),
       });
-  
-      const data = await res.json(); // ✅ CORRETTO: una sola chiamata
-      console.log(data);
+      
+
+      const data = await res.json();
       setConferma(data.messaggio);
     } catch (error) {
       console.error("Errore:", error);
