@@ -15,7 +15,7 @@ function PrenotaTavolo() {
 
   const inviaPrenotazione = async (e) => {
     e.preventDefault();
-
+  
     const prenotazione = {
       nome,
       telefono,
@@ -24,7 +24,7 @@ function PrenotaTavolo() {
       orario,
       persone
     };
-
+  
     try {
       const res = await fetch("https://backend-lemoire.onrender.com/prenota-tavoli", {
         method: "POST",
@@ -33,17 +33,16 @@ function PrenotaTavolo() {
         },
         body: JSON.stringify(prenotazione),
       });
-      
-      console.log(await res.json()); // Stampa la risposta per diagnosticare l'errore
-      
-
-      const data = await res.json();
+  
+      const data = await res.json(); // ✅ CORRETTO: una sola chiamata
+      console.log(data);
       setConferma(data.messaggio);
     } catch (error) {
       console.error("Errore:", error);
       setConferma("Errore durante la prenotazione.");
     }
   };
+  
 
   return (
     <div style={{ padding: "2rem" }}>
